@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HTML Form </title>
+</head>
+<body>
+    <h1>แบบฝึกหัดที่ 3 : HTML Form </h1>
+    <h2>รหัสนักศึกษา 6440011023 พิมพ์ลภัส เป็งทร</h2>
+
+    <form>
+        <label for="name"> ชื่อ-นามสกุล : </label>
+        <input type="text" name="name" size="40" maxlength="50">
+        <br><br>
+
+        <label for="ID"> รหัสนักศึกษา : </label>
+        <input type="text" name="ID" size="25" maxlength="15">
+
+        <label for="SEX"> เพศ :</label>
+        <select name="SEX" >
+                 <!-- ใน""จะเก็บเป็นค่าอะไรกะแล้วแต่  -->
+            <option value="01">หญิง</option>
+            <option value="02">ชาย</option>
+            <option value="03">LGBTQ+</option>
+            
+        </select>
+        <br><br>
+
+        <label for="year"> ปีการศึกษาที่เข้าศึกษา (พ.ศ.) : </label>
+        <input type="text" name="year" size="5" maxlength="4">
+        <br><br>
+
+        <label for="address"> ที่อยู่ :</label>
+        <br>
+                                 <!-- ความกว้าง  ความสูง -->
+        <textarea name="address" cols="40" rows="5"></textarea>
+        <br><br>
+        <label for="email"> Email :</label>
+        <input type="email" name="customer_email" size="30" maxlength="50">
+        <br><br>
+
+        <label for="Num">เบอร์โทรติดต่อ :</label>
+        <input type="text" name="num" size="25" maxlength="10">
+        <br><br>
+
+        <label for="IT&IS">หลักสูตร :</label>
+        <input type="radio" name="IT&IS"> IT
+        <input type="radio" name="IT&IS"> IS 
+        <br><br>
+
+        <label for="Occupation">อาชีพปัจจุบัน :</label>
+        <input type="text" name="occupation" size="25" maxlength="50">
+        <br><br>
+
+        <label for="Company_Name">ชื่อบริษัท :</label>
+        <input type="text" name="Cp_N" size="25" maxlength="50">
+        <br><br>
+
+        <label for="address_company"> ที่อยู่บริษัท :</label>
+        <br>
+                                 <!-- ความกว้าง  ความสูง -->
+        <textarea name="address_company" cols="40" rows="5"></textarea>
+        <br><br>
+
+        <label for="job type"> ประเภทงาน :</label>
+        <select name="job type" >
+                 <!-- ใน""จะเก็บเป็นค่าอะไรกะแล้วแต่  -->
+            <option value="01">Web Developer</option>
+            <option value="02">SA</option>
+            <option value="03">Graphic Design</option>
+            <option value="04">Digital Marketing</option>
+            <option value="05">อื่น</option>
+            
+        </select>
+        <br><br>
+        <label for="picture">upload รูปถ่ายตนเอง 1 รูป:</label>
+        <input type="file" name="profile_pic">
+        <br><br>
+
+
+        <input type="submit" name="Subscribe" value="Subscribe">
+        <input type="reset" name="reset" value="Clear">
+    </form>
+    
+</body>
+</html>
